@@ -12,10 +12,10 @@
 
 <script>
 
-    var json = ["hallo", 12, 12];
+    var test = ["hallo", 12, 12];
 
     function upload() {
-        var str = JSON.stringify([new Number(3), new String('false'), new Boolean(false)]);
+        var str = JSON.stringify(test);
         aop.setStore("store1", str);
         alert(typeof str);
     }
