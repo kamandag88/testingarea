@@ -12,19 +12,26 @@
 
 <script>
 
-    var json = [];
+    var json = [hallo, 12, 12];
 
     function upload() {
         var str = JSON.stringify(json);
         aop.setStore("store1", str);
-        alert("Uploaded Success!");
+        alert(str);
     }
 
     function download(){
         var store = aop.getStore("store1");
         var obj = JSON.parse(store);
-        document.getElementbyId("test").innerHTML = obj;
+        alert(obj);
     }
 
 </script>
+
+<body>
+
+    <button onclick="upload()">Upload</button>
+    <button onclick="download()">Download</button>
+
+</body>
 </html>
