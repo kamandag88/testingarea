@@ -15,7 +15,7 @@
     var json = ["hallo", 12, 12];
 
     function upload() {
-        var str = JSON.stringify(json);
+        var str = JSON.stringify([new Number(3), new String('false'), new Boolean(false)];
         aop.setStore("store1", str);
         alert(str);
     }
