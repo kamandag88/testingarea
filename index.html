@@ -17,7 +17,7 @@
     function upload() {
         var str = JSON.stringify([new Number(3), new String('false'), new Boolean(false)]);
         aop.setStore("store1", str);
-        alert(str);
+        alert(VarType(str));
     }
 
     function download(){
