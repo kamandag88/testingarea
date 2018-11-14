@@ -10,28 +10,33 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
 
-<script>
-
-    var test = ["hallo", 12, 12];
-
-    function upload() {
-        var str = JSON.stringify(test);
-        aop.setStore("store1", str);
-        alert(typeof str + "" + str);
-    }
-
-    function download(){
-        var store = aop.getStore("store1");
-        var obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');
-        alert(obj);
-    }
-
-</script>
-
 <body>
 
-    <button onclick="upload()">Upload</button>
-    <button onclick="download()">Download</button>
+    <div><span value="cpf.get('d2');"></span></div>
 
 </body>
+
+<script>
+        function setup(){
+        if(cpf)
+            cpf.setPinMode('["resetPin"],["setPinMode", "digital", 2, "INPUT"],["setPinMode", "digital", 3, "INPUT"],["setPinMode", "digital", 4, "INPUT"],["setPinMode", "digital", 5, "INPUT"],["setPinMode", "digital", 6,"INPUT"],["setPinMode", "digital", 7,"INPUT"],["setPinMode", "analog", 1,"INPUT"],["setPinMode", "analog", 2,"INPUT"]');
+        }
+
+        setup();
+
+        var d2value;
+        var d3value;
+
+        //function loop(){
+            //d2value = cpf.get("d2");
+            //document.getElementById("d2value").value = d2value;  
+
+            //d3value = cpf.get("d3");
+            //document.getElementById("d3value").value = d3value;
+        //}
+
+        //loop();
+
+    </script>
+
 </html>
