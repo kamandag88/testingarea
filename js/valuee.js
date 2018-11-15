@@ -24,7 +24,7 @@
                 if(value == 1) {
                     setbackg();
                     addscore();
-                    addcounter(count);
+                    addcounter();
                 }
                 else{
                     setbackgback();
@@ -51,7 +51,7 @@
             document.getElementById("vall").innerHTML = score;
         }
 
-        function addcounter(counter){
-            counter = counter + 1;
-            document.getElementById("valll").innerHTML = counter;
+        function addcounter(){
+            count = count + 1;
+            document.getElementById("valll").innerHTML = count;
         }
