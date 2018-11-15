@@ -1,6 +1,9 @@
         setup();
 
         var value;
+        var score;
+
+        score=0;
 
         function setup(){
         if(cpf)
@@ -37,4 +40,8 @@
 
         function setbackgback(){
             document.body.style.backgroundImage = "url('img/6thScreen.jpg')";
+        }
+
+        function addscore(){
+            score = score + 100;
         }
