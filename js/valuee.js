@@ -1,4 +1,4 @@
-        /*setup();
+        setup();
 
         var value;
 
@@ -17,7 +17,10 @@
                 document.getElementById("val").innerHTML = value; 
 
                 if(value == 1) {
-                    //document.getElementById("vall").style.backgroundImage = "url('img/CoverHead.jpg')";
+                    setbackg();
+                }
+                else{
+                    setbackgback();
                 }
 
             }
@@ -26,8 +29,12 @@
         }
 
         loop();
-*/
+
 
         function setbackg(){
-            document.body.style.backgroundImage = "url('img/CoverHead.jpg')";
+            document.body.style.backgroundImage = "url('img/InsertCoverInfo.jpg')";
+        }
+
+        function setbackgback(){
+            document.body.style.backgroundImage = "url('img/6thScreen.jpg')";
         }
