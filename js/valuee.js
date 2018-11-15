@@ -15,6 +15,11 @@
 
                 value = cpf.get("d2");
                 document.getElementById("val").innerHTML = value; 
+
+                if(value == 1) {
+                    document.getElementById("vall").style.backgroundImage = "url('img/CoverHead.jpg')";
+                }
+
             }
 
                 setTimeout("loop()", 1000); 
