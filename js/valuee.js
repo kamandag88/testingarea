@@ -44,4 +44,5 @@
 
         function addscore(){
             score = score + 100;
+            document.getElementById("vall").innerHTML = score;
         }
