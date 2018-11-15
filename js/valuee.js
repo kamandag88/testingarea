@@ -2,7 +2,9 @@
 
         var value;
         var score;
+        var count;
 
+        count=0;
         score=0;
 
         function setup(){
@@ -22,6 +24,7 @@
                 if(value == 1) {
                     setbackg();
                     addscore();
+                    addcounter(count);
                 }
                 else{
                     setbackgback();
@@ -46,4 +49,9 @@
         function addscore(){
             score = score + 100;
             document.getElementById("vall").innerHTML = score;
+        }
+
+        function addcounter(counter){
+            counter = counter + 1;
+            document.getElementById("valll").innerHTML = counter;
         }
