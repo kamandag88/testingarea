@@ -1,4 +1,4 @@
-        setup();
+        /*setup();
 
         var value;
 
@@ -16,9 +16,9 @@
                 value = cpf.get("d2");
                 document.getElementById("val").innerHTML = value; 
 
-                //if(value == 1) {
+                if(value == 1) {
                     //document.getElementById("vall").style.backgroundImage = "url('img/CoverHead.jpg')";
-                //}
+                }
 
             }
 
@@ -26,3 +26,8 @@
         }
 
         loop();
+*/
+
+        function setbackg(){
+            document.body.style.backgroundImage = "url('img/CoverHead.jpg')";
+        }
