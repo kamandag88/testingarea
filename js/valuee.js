@@ -21,6 +21,7 @@
 
                 if(value == 1) {
                     setbackg();
+                    addscore();
                 }
                 else{
                     setbackgback();
