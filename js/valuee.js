@@ -21,7 +21,7 @@
                 value = cpf.get("d2");
                 document.getElementById("val").innerHTML = value; 
 
-                if(value == 1) {
+                if(value == 1 && count == 0) {
                     setbackg();
                     addscore();
                     addcounter();
@@ -29,9 +29,7 @@
                 else{
                     setbackgback();
                 }
-
             }
-
                 setTimeout("loop()", 1000); 
         }
 
