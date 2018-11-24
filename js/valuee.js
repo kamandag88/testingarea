@@ -16,7 +16,8 @@
             alert(storeId);
             document.getElementById("valstr").innerHTML = valstring;
             alert(valstring);
-            aop.setStore(storeId, valstring);
+            string x = "abcdef"
+            aop.setStore(storeId, x);
         }
 
         function downloadd(){
