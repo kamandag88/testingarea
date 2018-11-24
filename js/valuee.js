@@ -4,6 +4,7 @@
     var valstring = "";
     var dwdstr = "";
     var valdwd = 0;
+    var storeId = "store" + 1;
 
         function uploadd(){
             val = document.getElementById("val").innerHTML;
@@ -12,7 +13,6 @@
             json.push(valarray);
             valstring = JSON.stringify(json);
             document.getElementById("valstr").innerHTML = valstring;
-            var storeId = "store" + 1;
             aop.setStore(storeId, valstring)
         }
 
