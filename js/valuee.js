@@ -12,6 +12,7 @@
             //document.getElementById("valarr").innerHTML = valarray;
             //json.push(valarray);
             valstring = JSON.stringify(val);
+            alert("Before setting valstring");
             document.getElementById("valstr").innerHTML = valstring;
             aop.setStore(storeId, valstring);
         }
