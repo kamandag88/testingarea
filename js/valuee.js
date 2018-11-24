@@ -8,10 +8,10 @@
 
         function uploadd(){
             val = document.getElementById("val").innerHTML;
-            valarray = {"value": val};
-            document.getElementById("valarr").innerHTML = valarray;
-            json.push(valarray);
-            valstring = JSON.stringify(json);
+            //valarray = {"value": val};
+            //document.getElementById("valarr").innerHTML = valarray;
+            //json.push(valarray);
+            valstring = JSON.stringify(val);
             document.getElementById("valstr").innerHTML = valstring;
             aop.setStore(storeId, valstring);
         }
@@ -20,5 +20,5 @@
             dwdstr = aop.getStore(storeId);
             document.getElementById("DWDstr").innerHTML = dwdstr;    
             valdwd = JSON.parse(dwdstr);
-            document.getElementById("vallll").innerHTML = valdwd.value;
+            document.getElementById("vallll").innerHTML = valdwd;
         }
