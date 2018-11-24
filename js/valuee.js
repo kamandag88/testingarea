@@ -13,7 +13,7 @@
             json.push(valarray);
             valstring = JSON.stringify(json);
             document.getElementById("valstr").innerHTML = valstring;
-            aop.setStore(storeId, valstring)
+            aop.setStore(storeId, valstring);
         }
 
         function downloadd(){
