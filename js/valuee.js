@@ -9,6 +9,6 @@
         }
 
         function downloadd(){
-            dwdstr = aop.GetStore("store0");
+            dwdstr = aop.getStore("store0");
             document.getElementById("vallll").innerHTML = dwdstr;
         }
