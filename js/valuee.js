@@ -4,7 +4,8 @@
     var valstring = "";
     var dwdstr = "";
     var valdwd = 0;
-    var storeId = "store" + 1;
+    //var storeId = "store" + 1;
+    var storeId = 1;
 
         function uploadd(){
             val = document.getElementById("val").innerHTML;
