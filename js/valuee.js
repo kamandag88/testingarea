@@ -19,6 +19,7 @@
             alert(valstring);
             aop.setStore(storeId, valstring);
 
+            alert("starting to loop");
             while(aop.getStore(storeId) == "No Data"){
                 aop.setStore(storeId, valstring);
                 //setTimeout("loop()", 1000);     
