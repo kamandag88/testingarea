@@ -2,7 +2,7 @@
     var valarray = [];
     var json = [];
     var valstring = "";
-    var dwdstr = "";
+    var dwdstr = "abcdef";
     var valdwd = 0;
     //var storeId = "store" + 1;
     var storeId = "store" + 9;
