@@ -16,7 +16,8 @@
         }
 
         function downloadd(){
-            dwdstr = aop.getStore("store0");    
+            dwdstr = aop.getStore("store0");
+            document.getElementById("DWDstr").innerHTML = dwdstr;    
             valdwd = JSON.parse(dwdstr);
             document.getElementById("vallll").innerHTML = valdwd.value;
         }
