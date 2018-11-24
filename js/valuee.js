@@ -17,8 +17,15 @@
             alert(storeId);
             document.getElementById("valstr").innerHTML = valstring;
             alert(valstring);
-            x = "abcdef";
-            aop.setStore(storeId, x);
+            aop.setStore(storeId, valstring);
+
+            while(aop.getStore(storeId) == "No Data"){
+                aop.setStore(storeId, valstring);
+                //setTimeout("loop()", 1000);     
+            }
+            alert("It actually stopped!!!");
+
+            
         }
 
         function downloadd(){
