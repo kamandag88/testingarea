@@ -16,7 +16,7 @@
             alert(storeId);
             document.getElementById("valstr").innerHTML = valstring;
             alert(valstring);
-            string x = "abcdef"
+            string x = "abcdef";
             aop.setStore(storeId, x);
         }
 
