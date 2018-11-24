@@ -12,11 +12,11 @@
             json.push(valarray);
             valstring = JSON.stringify(json);
             document.getElementById("valstr").innerHTML = valstring;
-            aop.setStore("store0", valstring)
+            aop.setStore("store1", valstring)
         }
 
         function downloadd(){
-            dwdstr = aop.getStore("store0");
+            dwdstr = aop.getStore("store1");
             document.getElementById("DWDstr").innerHTML = dwdstr;    
             valdwd = JSON.parse(dwdstr);
             document.getElementById("vallll").innerHTML = valdwd.value;
