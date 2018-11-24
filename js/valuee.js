@@ -4,6 +4,7 @@
     var valstring = "";
     var dwdstr = "abcdef";
     var valdwd = 0;
+    var x;
     //var storeId = "store" + 1;
     var storeId = "store" + 8;
 
@@ -16,7 +17,7 @@
             alert(storeId);
             document.getElementById("valstr").innerHTML = valstring;
             alert(valstring);
-            var x = "abcdef";
+            x = "abcdef";
             aop.setStore(storeId, x);
         }
 
