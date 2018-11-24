@@ -8,8 +8,10 @@
         function uploadd(){
             val = document.getElementById("val").innerHTML;
             valarray = {"value": val};
+            document.getElementById("valarr").innerHTML = valarray;
             json.push(valarray);
             valstring = JSON.stringify(json);
+            document.getElementById("valstr").innerHTML = valstring;
             aop.setStore("store0", valstring)
         }
 
