@@ -5,7 +5,7 @@
     var dwdstr = "";
     var valdwd = 0;
     //var storeId = "store" + 1;
-    var storeId = 8;
+    var storeId = "store" + 8;
 
         function uploadd(){
             val = document.getElementById("val").innerHTML;
