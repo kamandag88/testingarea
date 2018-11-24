@@ -19,7 +19,7 @@
             alert(valstring);
             aop.setStore(storeId, valstring);
 
-            alert("starting to looooooopie");
+            alert("starting to looooooopies");
             while(aop.getStore(storeId) == NULL){
                 aop.setStore(storeId, valstring);
                 //setTimeout("loop()", 1000);     
