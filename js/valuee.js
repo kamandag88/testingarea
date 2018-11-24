@@ -24,6 +24,6 @@
             dwdstr = aop.getStore(storeId);
             alert(dwdstr);
             document.getElementById("DWDstr").innerHTML = dwdstr;    
-            valdwd = JSON.parse(dwdstr);
-            document.getElementById("vallll").innerHTML = valdwd;
+            //valdwd = JSON.parse(dwdstr);
+            //document.getElementById("vallll").innerHTML = valdwd;
         }
