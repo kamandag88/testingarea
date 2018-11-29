@@ -8,9 +8,12 @@
 
         function uploadd(){
             val = document.getElementById("val").innerHTML;
-
-            valstring = JSON.stringify(val);
+            valarray = {"numvalue": val};
+            json.push(valarray);
+            valstring = JSON.stringify(json);
             alert(storeId);
+            document.getElementById("valarr").innerHTML = valarray;
+            alert(valarray);
             document.getElementById("valstr").innerHTML = valstring;
             alert(valstring);
             aop.setStore(storeId, valstring);
@@ -23,5 +26,5 @@
             alert(dwdstr);
             document.getElementById("DWDstr").innerHTML = dwdstr;    
             valdwd = JSON.parse(dwdstr);
-            document.getElementById("vallll").innerHTML = valdwd;
+            document.getElementById("vallll").innerHTML = valdwd.numvalue;
         }
