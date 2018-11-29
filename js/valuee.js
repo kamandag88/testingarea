@@ -9,8 +9,8 @@
         function uploadd(){
             val = document.getElementById("val").innerHTML;
             valarray = {"numvalue": val};
-            json.push(valarray);
-            valstring = JSON.stringify(json);
+            //json.push(valarray);
+            valstring = JSON.stringify(valarray);
             alert(storeId);
             document.getElementById("valarr").innerHTML = valarray;
             alert(valarray);
@@ -26,5 +26,6 @@
             alert(dwdstr);
             document.getElementById("DWDstr").innerHTML = dwdstr;    
             valdwd = JSON.parse(dwdstr);
+            alert(valdwd);
             document.getElementById("vallll").innerHTML = valdwd.numvalue;
         }
