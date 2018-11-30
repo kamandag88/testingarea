@@ -11,6 +11,7 @@
     var storeId2 = "store" + userInput;
 
         function uploadd(){
+            storeId = "store" + initial;
             val = document.getElementById("val").innerHTML;
             val2 = document.getElementById("val2").innerHTML;
             valarray = {"numvalue": val, "nameko": val2};
@@ -23,8 +24,8 @@
             alert(valstring);
             aop.setStore(storeId, valstring);
             initial = initial + 1;
-            storeId = "store" + initial;
-
+            val = val + 1;
+            document.getElementById("val").innerHTML = val;
 
         }
 
