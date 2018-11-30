@@ -23,6 +23,7 @@
             alert(valstring);
             aop.setStore(storeId, valstring);
             initial = initial + 1;
+            storeId = "store" + initial;
 
 
         }
@@ -30,6 +31,7 @@
         function downloadd(){
             userInput= document.getElementById("userInput").value
             alert(userInput);
+            storeId2 = "store" + userInput;
             alert(storeId2);
             dwdstr = aop.getStore(storeId2);
             alert(dwdstr);
