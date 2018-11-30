@@ -18,10 +18,15 @@
     Array:<span id="valarr">0</span></div>
     <div>ValString:<span id="valstr">0</span></div>    
     <div><button id="vall" onclick="uploadd()">Upload</button></div>
-    <div><button id="valll" onclick="downloadd()">Download</button></div>
+    <!--<div><button id="valll" onclick="downloadd()">Download</button></div>-->
     <div>DWDstr:<span id="DWDstr">0</span></div>
     <div>Downloaded:<span id="vallll">0</span></div>
     <div>Downloaded:<span id="valllll">0</span></div>
+    <form id="form" onsubmit="return false;">
+        <div>
+                Storage Number: <input type="text" id="userInput" />
+                <input type="submit" onclick="downloadd();" text="Submit"/>
+        </form>
 
 </body>
 
