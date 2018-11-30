@@ -22,6 +22,7 @@
             document.getElementById("valstr").innerHTML = valstring;
             alert(valstring);
             aop.setStore(storeId, valstring);
+            initial = initial + 1;
 
 
         }
