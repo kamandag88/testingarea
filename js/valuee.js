@@ -1,5 +1,5 @@
     var val= 0;
-    var val2 = "";
+    var val2 = "kadirs";
     var valarray = [];
     var json = [];
     var valstring = "";
