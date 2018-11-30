@@ -5,7 +5,10 @@
     var valstring = "";
     var dwdstr = "";
     var valdwd = 0;
-    var storeId = "store" + 8;
+    var initial = 0;
+    var storeId = "store" + initial;
+    var userInput = 0;
+    var storeId2 = "store" + userInput;
 
         function uploadd(){
             val = document.getElementById("val").innerHTML;
@@ -20,11 +23,14 @@
             alert(valstring);
             aop.setStore(storeId, valstring);
 
+
         }
 
         function downloadd(){
-            alert(storeId);
-            dwdstr = aop.getStore(storeId);
+            userInput= document.getElementById("userInput").value
+            alert(userInput);
+            alert(storeId2);
+            dwdstr = aop.getStore(storeId2);
             alert(dwdstr);
             document.getElementById("DWDstr").innerHTML = dwdstr;    
             valdwd = JSON.parse(dwdstr);
