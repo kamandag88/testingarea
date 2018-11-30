@@ -10,7 +10,7 @@
         function uploadd(){
             val = document.getElementById("val").innerHTML;
             val2 = document.getElementById("val2").innerHTML;
-            valarray = {"numvalue": val, "name": val2};
+            valarray = {"numvalue": val, "nameko": val2};
             //json.push(valarray);
             valstring = JSON.stringify(valarray);
             alert(storeId);
@@ -30,5 +30,5 @@
             valdwd = JSON.parse(dwdstr);
             alert(valdwd);
             document.getElementById("vallll").innerHTML = valdwd.numvalue;
-            document.getElementById("valllll").innerHTML = valdwd.numvalue;
+            document.getElementById("valllll").innerHTML = valdwd.nameko;
         }
