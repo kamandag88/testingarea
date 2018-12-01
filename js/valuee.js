@@ -5,7 +5,7 @@
     var valstring = "";
     var dwdstr = "";
     var valdwd = 0;
-    var initial = 0;
+    //var initial = 0;
     var storeId = "store" + initial;
     var userInput = 0;
     var storeId2 = "store" + userInput;
@@ -18,7 +18,7 @@
         }
 
         function uploadd(){
-            storeId = "store" + initial;
+            storeId = "store" + classnum;
             val = document.getElementById("val").innerHTML;
             val2 = document.getElementById("val2").innerHTML;
             valarray = {"numvalue": val, "kadirska": val2, "namemo": nameinput, "classnum": classnum};
