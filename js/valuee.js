@@ -9,12 +9,19 @@
     var storeId = "store" + initial;
     var userInput = 0;
     var storeId2 = "store" + userInput;
+    var nameinput = "";
+    var classnum = "";
+
+        function nameandclassnumber(){
+            nameinput = document.getElementById("nameInput").value;
+            classnum = document.getElementById("userGS").value;
+        }
 
         function uploadd(){
             storeId = "store" + initial;
             val = document.getElementById("val").innerHTML;
             val2 = document.getElementById("val2").innerHTML;
-            valarray = {"numvalue": val, "nameko": val2};
+            valarray = {"numvalue": val, "kadirska": val2, "namemo": nameinput, "classnum": classnum};
             //json.push(valarray);
             valstring = JSON.stringify(valarray);
             alert(storeId);
