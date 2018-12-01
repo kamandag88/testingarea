@@ -46,6 +46,6 @@
             document.getElementById("DWDstr").innerHTML = dwdstr;    
             valdwd = JSON.parse(dwdstr);
             alert(valdwd);
-            document.getElementById("vallll").innerHTML = valdwd.studentname;
-            document.getElementById("valllll").innerHTML = valdwd.classnumber;
+            document.getElementById("vallll").innerHTML = valdwd.namemo;
+            document.getElementById("valllll").innerHTML = valdwd.classnum;
         }
