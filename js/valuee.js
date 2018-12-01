@@ -6,7 +6,7 @@
     var dwdstr = "";
     var valdwd = 0;
     //var initial = 0;
-    var storeId = "store" + initial;
+    var storeId = "store" + 0;
     var userInput = 0;
     var storeId2 = "store" + userInput;
     var nameinput = "";
@@ -30,7 +30,7 @@
             document.getElementById("valstr").innerHTML = valstring;
             alert(valstring);
             aop.setStore(storeId, valstring);
-            initial = initial + 1;
+            //initial = initial + 1;
             val = val + 1;
             document.getElementById("val").innerHTML = val;
 
